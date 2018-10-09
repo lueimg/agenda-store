@@ -87,7 +87,7 @@ const savePredefinedExpenses = () => async (dispatch: Dispatch) => {
     })
 }
 
-const updatePredefinedExpenses = (payload: any) => async (dispatch: Dispatch) => {
+const updatePredefinedExpenses = (payload) => async (dispatch: Dispatch) => {
     await HttpService.updatePredefinedExpense(payload);
     dispatch({
         type: PredefinedExpensesActionTypes.update,
@@ -95,7 +95,7 @@ const updatePredefinedExpenses = (payload: any) => async (dispatch: Dispatch) =>
     })
 }
 
-const removePredefinedExpense = (payload: any) => async (dispatch: Dispatch) => {
+const removePredefinedExpense = (payload) => async (dispatch: Dispatch) => {
     await HttpService.removePredefinedExpense(payload);
     dispatch({
         type: PredefinedExpensesActionTypes.remove,

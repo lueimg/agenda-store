@@ -15,12 +15,6 @@ const Wrapper = styled.div`
 `;
 
 
-
-type Props = {
-  actions: any;
-  list: any[];
-};
-
 class PredefineExpenses extends React.Component {
 
   componentDidMount() {

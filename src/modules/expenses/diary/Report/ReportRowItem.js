@@ -4,14 +4,12 @@ import Avatar from '@material-ui/core/Avatar';
 
 export default class Expense extends React.PureComponent {
   render() {
-    const categoryShortcut = this.props.category.slice(0,3);
     const amount = `s./${this.props.amount}`
     return (
-        <Chip 
-            className="margin-right-one" 
-            avatar={<Avatar>{categoryShortcut}</Avatar>} 
-            label={amount} 
-        />
+        <div className='expense-item'>
+          <div className="amount">{ amount }</div>
+          <div className="category">{this.props.category}</div>
+        </div>
     )
   }
 }

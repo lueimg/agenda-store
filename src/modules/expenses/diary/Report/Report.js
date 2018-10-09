@@ -3,7 +3,7 @@ import moment from "moment";
 import {  TextField } from "@material-ui/core";
 import HttpService from "../../../../shared/services/HttpService";
 import ReportRow from "./ReportRow";
-import "./styles.css";
+import "./styles.scss";
 
 
 export class ReportDailyExpense extends React.Component {
@@ -22,7 +22,8 @@ export class ReportDailyExpense extends React.Component {
   }
 
   async loadDailyExpense() {
-    const documents = await HttpService.getDiaryExpense();
+    const firstDayOfCurrentMonth = moment().startOf('month').toDate().getTime()
+    const documents = await HttpService.getDiaryExpense(firstDayOfCurrentMonth);
     const expenses = this.normalizeExpensesInCollections(documents);
 
     await HttpService.getFamily();

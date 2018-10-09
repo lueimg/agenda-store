@@ -4,7 +4,6 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import DeleteIcon from '@material-ui/icons/Delete';
 import Icon from '@material-ui/core/Icon';
-import { PredefinedExpense } from '../../../shared/models/PredefinedExpense';
 import { connect } from 'react-redux';
 import { PredefinedExpensesActions } from '../../../store/actions/predefinedExpensesActions';
 

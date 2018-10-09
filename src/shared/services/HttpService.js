@@ -100,8 +100,8 @@ class HttpService {
         return this.diaryCollection().doc(payload.id).delete();
     }
 
-    async getDiaryExpense () {
-        const querySnapshot = await this.diaryCollection().get();
+    async getDiaryExpense (time) {
+        const querySnapshot = await this.diaryCollection().where('createdAt', '>', time).get();
         const data = {};
         querySnapshot.forEach( doc => {
             data[doc.id] = { ...doc.data(), id: doc.id }

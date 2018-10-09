@@ -22,3 +22,19 @@
     padding: 5px;
     min-width: 2.5rem;
 }
+
+.expense-item {
+    margin-right: .5rem;
+    border: 1px solid #ccc;
+    padding: 0 .5em;
+    border-radius: .5em;
+    position: relative;
+
+    .amount {
+
+    }
+    .category {
+        position: absolute;
+        font-size: 0.5rem;
+    }
+}

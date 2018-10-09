@@ -62,10 +62,10 @@ class Payment extends React.Component {
 }
 
 
-const mapDispatchToProps = (dispatch: any) => {
+const mapDispatchToProps = (dispatch) => {
     return {
         actions: {
-            markAsPaid(payload: any) { dispatch({type: 'update', payload })}
+            markAsPaid(payload) { dispatch({type: 'update', payload })}
         }
     }
 }
