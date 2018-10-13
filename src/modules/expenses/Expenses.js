@@ -33,7 +33,7 @@ export class Expenses extends React.Component {
 
     return (
       <React.Fragment>
-        <div className="expenses-wrapper overflow-auto height-90vh flex">
+        <div className="expenses-wrapper overflow-auto full-height flex">
           <Switch>
             <Route
               path={this.props.match.url + "/monthly"}
