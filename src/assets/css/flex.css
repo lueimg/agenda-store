@@ -62,3 +62,30 @@
 .flex-grow-1 {
 	flex-grow: 1;
 }
+
+.flex-col,
+.flex-col-auto { 
+	flex: 1;
+}
+.flex-col-of-1 {
+	flex: 0 0 100%;
+}
+.flex-col-of-2 {
+	flex: 0 0 500%;
+}
+.flex-col-of-3 {
+	flex: 0 0 33.3333%;
+}
+.flex-col-of-4 {
+	flex: 0 0 25%;
+}
+
+.flex-row-wrap {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.flex-row-nowrap {
+	display: flex;
+	flex-flow: row nowrap;
+}

@@ -1,0 +1,11 @@
+.grid {
+    display: grid;
+}
+
+.grid-template-rows-header-content {
+    grid-template-rows: auto 1fr
+}
+
+.grid-template-rows-content-footer {
+    grid-template-rows: 1fr auto;
+}

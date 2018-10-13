@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import "./assets/css/flex.css"
+import "./assets/css/grid.css"
 import "./assets/css/helpers.css"
 
 import Main from "./modules/main";
